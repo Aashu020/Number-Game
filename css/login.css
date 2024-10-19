@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding:0;
+
+    & p, & a, & label, & legend{
+        color: white;
+        font-family: "Yuji Boku", serif;
+        font-size: 30px;
+    }
+}
+
+.yuji-boku-regular {
+    font-family: "Yuji Boku", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+body{
+    background-color: black;
+}
+
+.main-section{
+    
+    .main-body{
+        background-image: url("../img/bboard.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+        width: 70%;
+        height: 500px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 3rem;
+        margin-left: 18rem;
+
+        & form{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+            width: 60%;
+            margin-left: -15rem;
+                
+            .field{
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                margin-top: 0.8rem;
+
+                & input{
+                    height: 2rem;
+                    background: transparent;
+                    border: none;
+                    border-bottom:0.5px solid grey;
+                    color: white;
+                    font-size: 20px;
+                    font-family: "Yuji Boku", serif;
+                }
+
+                /* & input[type="email"] {
+                    height: 2rem;
+                    background: transparent;
+                    border: none;
+                    border-bottom:0.5px solid grey;
+                    color: white;
+                    font-size: 20px;
+                    font-family: "Yuji Boku", serif;
+                } */
+
+                & input:hover{
+                    border: 0.5px solid #87CEEB;
+                    color: white;
+                    border-radius: 14px;
+                    font-family: "Yuji Boku", serif;
+                }
+
+                #userid:hover{
+                    font-size: 35px;
+                    color: #87CEEB;
+                }
+            }
+
+            & legend{
+                font-weight: bold;
+            }
+
+            
+            & button{
+                width: 30%;
+            }
+
+            .btns{
+                width: 100%;
+                display: flex;
+                justify-content: space-around;
+                margin-top: 2rem;
+
+                & button{
+                    height: 2rem;
+                    background: transparent;
+                    border: none;
+                    color: white;
+                    font-size: 25px;
+                    font-family: "Yuji Boku", serif;
+                } 
+
+                #for:hover{
+                    color: #ed7777;
+                    font-size: 35px;
+                }
+
+                #btn-sub:hover{
+                    color: #32de84;
+                    font-size: 35px;
+                }
+            }
+
+            #acc{
+                font-size: 20px;
+                margin-top: 5rem;
+            }
+            & a{
+                font-size: 20px;
+                text-decoration: none;
+                color: #87CEEB;
+            }
+            & a:hover{
+                font-size: 25px;
+                text-decoration: underline;
+                color: #32de84;
+            }
+        }
+    }
+} 

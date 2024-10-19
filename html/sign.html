@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Sign In</title>
+    <link rel="stylesheet" href="../css/sign.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&family=Zeyada&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main-section">
+        <div class="main-body">
+            <form action="login.html" id="myform" method="form">
+                <legend>Guess The Number</legend>
+                <div id="namefield" class="field">  
+                    <label for="">Name:</label>
+                    <input type="text" name="" id="userid" >
+                </div>
+                <div id="emailfield" class="field">
+                    <label for="">Email:</label>
+                    <input type="email" name="" id="mailid" required>
+                </div>
+                <div id="passfiled" class="field">
+                    <label for="">Password:</label>
+                    <input type="password" name="" id="pasw" >
+                </div>
+                <div id="conf-passfiled" class="field">
+                    <label for=""> Confirm Password:</label>
+                    <input type="password" name="" id="con-pasw" >
+                </div>
+                <div class="btns">
+                    <button type="submit" id="btn-sub">Submit</button>
+                    <button type="reset" id="cancel">Cancel</button>
+                </div>
+                <p id="acc">Already have a account 
+                    <a href="../html/login.html">Login </a>now
+                </p>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="../js/sign.js"></script>
+</html>
+

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="../css/profile.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&family=Zeyada&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="mainsection">
+        <div class="mainbody">
+            <div class="pedit">
+                <button id="profimage">
+                    <img src="../img/profile.png" alt="" id="prof-img">
+                </button>
+                <button id="edit">
+                    <input type="file" id="image_input" accept="image/jpeg, image/png, image/jpg">
+                    <label for="image_input" id="pname1"></label>
+                </button>
+            </div>
+
+            <table class="tb">
+                <tr>
+                    <td><pre>Name:</pre></td>
+                    <td><pre id="pname"></pre></td>
+                </tr>
+                <tr>
+                    <td><pre>Email:</pre></td>
+                    <td><pre id="pmail"></pre></td>
+                </tr>
+                <tr>
+                    <td><pre>ID:</pre></td>
+                    <td><pre id="pid"></pre></td>
+                </tr>
+                <tr>
+                    <td><pre>HighScore:</pre></td>
+                    <td><pre id="highscore"></pre></td>
+                </tr>
+                <tr>
+                    <td>
+                        <button id="backbtn">Back</button>
+                    </td>
+                    <td>
+                        <button id="quit">Quit</button>
+                    </td>
+                </tr>
+            </table>
+        </div>
+    </section>
+</body>
+<script src="../js/profile.js"></script>
+</html>

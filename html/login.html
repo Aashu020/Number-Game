@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Zeyada&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&family=Zeyada&display=swap" rel="stylesheet">
+</head>
+<body>
+    <section class="main-section">
+        <div class="main-body">
+            <form action="start.html" id="myform" method="form">
+                <legend>Guess The Number</legend>
+                <div id="namefield" class="field">
+                    <label for="">Name:</label>
+                    <input type="text" name="" id="nameid" required>
+                </div>
+                <div id="passfiled" class="field">
+                    <label for="">Password:</label>
+                    <input type="password" name="" id="pasw" required>
+                </div>
+                <div id="idfield" class="field">
+                    <label for="">User ID:</label>
+                    <p id="userid"></p>
+                </div>
+                <div class="btns">
+                    <button id="for">Forgot Password</button>
+                    <button type="submit" id="btn-sub">Next</button>
+                </div>
+                <p id="acc">Don't have a account 
+                    <a href="../html/sign.html">Signin </a>now
+                </p>
+            </form>
+        </div>
+    </section>
+</body>
+<script src="../js/login.js"></script>
+</html>
