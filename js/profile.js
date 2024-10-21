@@ -29,10 +29,11 @@ quit.addEventListener("click",()=>{
     // localStorage.()
 })
 
-profimgbtn.addEventListener("click",()=>{
-    alert("hello")
-    profimg.src=URL.createObjectURL(event.target.files[0]);
-})
+// profimgbtn.addEventListener("click",()=>{
+//     // alert("hello")
+//     // profimg.style.height="5rem"
+//     profimg.src=URL.createObjectURL(event.target.files[0]);
+// })
 
     document.getElementById('image_input').addEventListener('change', function() {
         var filereader = new FileReader();
