@@ -19,10 +19,11 @@ btnsub.addEventListener("click",(e)=>{
         alert("Name should not contain any number");
         myform.action="sign.html"
     }
-    var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    var emailPattern = /^[^\s@]+@[gmail]+\.[^\s@]+$/;
     var emailcheck=mail.value
-    if(emailPattern.test(emailcheck)){
-        alert(emailcheck)
+    if(emailPattern.test(emailcheck)==false){
+        // alert(emailcheck)
         alert("Please complete your address");
         myform.action="sign.html";
     }

@@ -25,7 +25,7 @@ back.addEventListener("click",()=>{
 })
 
 quit.addEventListener("click",()=>{
-    window.open("../html/login.html");
+    window.open("../html/login.html","_self");
     // localStorage.()
 })
 
