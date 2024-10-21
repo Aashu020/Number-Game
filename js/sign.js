@@ -8,8 +8,10 @@ var min=100;
 var max=999;
 var rnum = Math.floor(Math.random() * (max - min + 1)) + min;
 
-var currhighscore=0;
-localStorage.setItem("Highscore",currhighscore)
+// var currhighscore;
+// localStorage.setItem("Highscore",currhighscore);
+var hg=localStorage.getItem("Highscore");
+localStorage.setItem("Highscore",hg)
 
 btnsub.addEventListener("click",(e)=>{
     var name=nameid.value;

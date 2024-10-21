@@ -48,6 +48,7 @@ level.innerHTML=Number(levels);
 var count=0;
 
 var currhighscore=0;
+// localStorage.setItem("Highscore",currhighscore)
 
 // var seconds=30;
 function timer(seconds){
@@ -551,6 +552,7 @@ function scoreincre(){
     var score=parseInt(localStorage.getItem("score"));
     localStorage.setItem("score",++score);
     console.log("score",score)
+
     var prehighscore=localStorage.getItem("Highscore")
     if(score>prehighscore){
         prehighscore=score;

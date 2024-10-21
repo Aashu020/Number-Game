@@ -9,7 +9,7 @@ var getname=localStorage.getItem("Name");
 var getpass=localStorage.getItem("Password");
 var getid=localStorage.getItem("Userid");
 userid.innerHTML=getid;  
-userid.style.marginRight="7.rem";
+userid.style.marginRight="7rem";
 userid.style.fontSize="20px"
 console.log("get",getname);
 console.log("get",getpass);
