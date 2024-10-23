@@ -17,8 +17,7 @@ console.log("get",getid);
 
 logbtnsub.addEventListener("click",()=>{
     if(lognameid.value===getname && logpasw.value===getpass ){
-        window.open="start.html"
-        
+        window.open="start.html";
     }
     else {
         alert("Please Enter Correct Name and Password");
@@ -28,5 +27,4 @@ logbtnsub.addEventListener("click",()=>{
 
 forgot.addEventListener("click",()=>{
     alert(` your name is ${getname} and password is ${getpass}`);
-    // alert(``);
 })

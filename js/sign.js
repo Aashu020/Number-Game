@@ -9,9 +9,8 @@ var max=999;
 var rnum = Math.floor(Math.random() * (max - min + 1)) + min;
 
 // var currhighscore;
-// localStorage.setItem("Highscore",currhighscore);
-var hg=localStorage.getItem("Highscore");
-localStorage.setItem("Highscore",hg)
+// localStorage.setItem("Highscore",0);
+
 
 btnsub.addEventListener("click",(e)=>{
     var name=nameid.value;
@@ -25,13 +24,12 @@ btnsub.addEventListener("click",(e)=>{
     var emailPattern = /^[^\s@]+@[gmail]+\.[^\s@]+$/;
     var emailcheck=mail.value
     if(emailPattern.test(emailcheck)==false){
-        // alert(emailcheck)
         alert("Please complete your address");
         myform.action="sign.html";
     }
 
     if(pasword.length<=7){
-        alert("Password must contain atleast * characters");
+        alert("Password must contain atleast 8 characters");
         myform.action="sign.html";
     }
     if(pasw.value!=conpasw.value){

@@ -3,7 +3,7 @@ var playername1=document.getElementById("pname1");
 var playerid=document.getElementById("pid");
 var playermail=document.getElementById("pmail");
 var profimg=document.getElementById("prof-img");
-var playerhs=document.getElementById("highscore")
+var playerhs=document.getElementById("highscore");
 var back=document.getElementById("backbtn");
 var quit=document.getElementById("quit");
 var profimgbtn=document.getElementById("profimage");
@@ -20,20 +20,17 @@ playermail.innerHTML=pmailget;
 playerid.innerHTML=pidget;
 playerhs.innerHTML=phighscore
 
+
+var hg=localStorage.getItem("Highscore");
+localStorage.setItem("Highscore",hg);
+
 back.addEventListener("click",()=>{
     window.open('../html/start.html',"_top")
 })
 
 quit.addEventListener("click",()=>{
     window.open("../html/login.html","_self");
-    // localStorage.()
 })
-
-// profimgbtn.addEventListener("click",()=>{
-//     // alert("hello")
-//     // profimg.style.height="5rem"
-//     profimg.src=URL.createObjectURL(event.target.files[0]);
-// })
 
     document.getElementById('image_input').addEventListener('change', function() {
         var filereader = new FileReader();
